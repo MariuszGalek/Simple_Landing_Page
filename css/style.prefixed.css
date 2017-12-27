@@ -38,27 +38,95 @@ body {
 
 .about-us {
   margin: 100px auto;
+  height: auto;
 }
 
-.box {
+.about-us .box {
   border: 2px solid black;
+  border-top: none;
   position: relative;
   height: 350px;
-}
-
-.box-title {
-  background-color: #fff;
-  position: absolute;
   margin: 0 auto;
-  padding: 0 50px;
-  top: -40px;
-  left: 35%;
 }
 
-.box-text {
+.about-us .box h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  margin: 0;
+  line-height: 0.05em;
+}
+
+.about-us .box .heading:before, .about-us .box .heading:after {
+  content: '';
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+  background: linear-gradient(to right, black, black);
+}
+
+.about-us .box span {
+  padding: 0 50px;
+}
+
+.about-us .box .box-text {
   position: absolute;
-  padding: 80px 100px;
+  padding: 80px 110px;
   text-align: center;
   line-height: 2em;
+}
+
+.services {
+  background: url("../images/services.jpg");
+  background-size: cover;
+  height: 400px;
+  margin: 70px auto;
+}
+
+.services .box {
+  border: 2px solid white;
+  border-top: none;
+  position: relative;
+  height: 300px;
+  margin: 50px auto;
+}
+
+.services .box h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  margin: 0;
+  line-height: 0.05em;
+  color: #fff;
+}
+
+.services .box .heading:before, .services .box .heading:after {
+  content: '';
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+  background: linear-gradient(to right, white, white);
+}
+
+.services .box span {
+  padding: 0 50px;
+}
+
+.services .box .box-text {
+  position: absolute;
+  padding: 40px 110px;
+  text-align: center;
+  line-height: 2em;
+  color: #fff;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
