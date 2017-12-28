@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
   position: relative;
 }
 
-.about-us {
+.about-us, .activities {
   margin: 100px auto;
   height: auto;
 }
@@ -92,8 +92,8 @@ body {
   border: 2px solid white;
   border-top: none;
   position: relative;
-  height: 300px;
-  margin: 50px auto;
+  height: 250px;
+  margin: 80px auto;
 }
 
 .services .box h1 {
@@ -128,5 +128,51 @@ body {
   text-align: center;
   line-height: 2em;
   color: #fff;
+}
+
+.activities .box {
+  border: 2px solid black;
+  border-top: none;
+  position: relative;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.activities .box h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  margin: 0;
+  line-height: 0.05em;
+}
+
+.activities .box .heading:before, .activities .box .heading:after {
+  content: '';
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+  background: linear-gradient(to right, black, black);
+}
+
+.activities .box span {
+  padding: 0 50px;
+}
+
+.activities .box .box-text {
+  height: 300px;
+  padding: 80px 110px;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.activities .box .box-text figcaption {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
