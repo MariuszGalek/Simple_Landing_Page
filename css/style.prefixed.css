@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 * {
   box-sizing: border-box;
 }
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 900px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -22,18 +22,19 @@ body {
 }
 
 .jumbotron h1 {
-  padding-top: 40vh;
-  padding-bottom: 20px;
+  font-size: 54px;
+  font-weight: 700;
+  padding: 10vh 150px 20px 150px;
+}
+
+.jumbotron p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .logo {
-  margin: auto;
-  width: 50px;
-  height: 50px;
-  border: 2px solid black;
-  border-radius: 50%;
-  content: "";
-  position: relative;
+  margin-top: 30vh;
 }
 
 .about-us, .activities {
@@ -93,7 +94,7 @@ body {
   border-top: none;
   position: relative;
   height: 250px;
-  margin: 80px auto;
+  margin: 75px auto;
 }
 
 .services .box h1 {
@@ -174,5 +175,25 @@ body {
   font-size: 18px;
   font-weight: bold;
   padding: 15px 0;
+}
+
+.gallery {
+  height: 500px;
+}
+
+.gallery img {
+  height: 237px;
+  padding-top: 10px;
+}
+
+.carousel-caption {
+  left: 10%;
+  right: auto;
+  bottom: -10px;
+}
+
+.carousel-caption h3 {
+  font-size: 34px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
