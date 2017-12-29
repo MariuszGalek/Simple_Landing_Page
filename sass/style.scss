@@ -29,9 +29,13 @@ body {
 
 }
 .logo {
-    margin-top: 30vh;
+    margin-top: 25vh;
 }
-.about-us, .activities {
+.scroll {
+	text-align: center;
+	padding-top: 150px;
+}
+.about-us, .activities, .contact {
 	margin: 100px auto;
 	height: auto;
    }
@@ -47,6 +51,8 @@ body {
   		width: 100%;
   		margin: 0;
   		line-height: 0.05em;
+  		font-size: 34px;
+  		font-weight: 700;
 	}
 	.heading:before, .heading:after {
   		content: '';
@@ -83,6 +89,8 @@ body {
   		margin: 0;
   		line-height: 0.05em;
 		color: #fff;
+		font-size: 34px;
+  		font-weight: 700;
 	}
 	.heading:before, .heading:after {
   		content: '';
@@ -113,6 +121,8 @@ body {
   		width: 100%;
   		margin: 0;
   		line-height: 0.05em;
+  		font-size: 34px;
+  		font-weight: 700;
 	}
 	.heading:before, .heading:after {
   		content: '';
@@ -149,5 +159,55 @@ body {
 	h3 {
 	font-size: 34px;
 	font-weight: 700;
+	}
+}
+.contact .box {
+	border: 2px solid black;
+	border-top: none;
+	position: relative;
+	height: 300px;
+	margin: 0 auto;	
+	h1 {
+  		display: flex;
+  		flex: 1;
+  		width: 100%;
+  		margin: 0;
+  		line-height: 0.05em;
+  		font-size: 34px;
+  		font-weight: 700;
+	}
+	.heading:before, .heading:after {
+  		content: '';
+  		flex-grow: 1;
+  		margin: 0;
+  		background: linear-gradient(to right, black, black);
+	}
+	span {
+		padding: 0 50px;
+	}
+	.box-text {
+		position: absolute;
+		padding: 80px 110px;
+		text-align: center;
+		line-height: 2em;
+	}
+}
+.contact-btn {
+	text-align: center;
+	margin-top: 200px;
+	.btn-primary {
+		background-color: black;
+		width: 350px;
+		font-size: 16px;
+		height: 60px;
+	}
+	.btn-primary:hover, btn-primary:active {
+		background-color: gray;
+	}
+}
+footer {
+	height: 100px;
+	img {
+		padding: 0 30px;
 	}
 }

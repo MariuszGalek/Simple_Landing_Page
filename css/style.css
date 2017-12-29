@@ -34,10 +34,15 @@ body {
 }
 
 .logo {
-  margin-top: 30vh;
+  margin-top: 25vh;
 }
 
-.about-us, .activities {
+.scroll {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.about-us, .activities, .contact {
   margin: 100px auto;
   height: auto;
 }
@@ -56,6 +61,8 @@ body {
   width: 100%;
   margin: 0;
   line-height: 0.05em;
+  font-size: 34px;
+  font-weight: 700;
 }
 
 .about-us .box .heading:before, .about-us .box .heading:after {
@@ -98,6 +105,8 @@ body {
   margin: 0;
   line-height: 0.05em;
   color: #fff;
+  font-size: 34px;
+  font-weight: 700;
 }
 
 .services .box .heading:before, .services .box .heading:after {
@@ -133,6 +142,8 @@ body {
   width: 100%;
   margin: 0;
   line-height: 0.05em;
+  font-size: 34px;
+  font-weight: 700;
 }
 
 .activities .box .heading:before, .activities .box .heading:after {
@@ -177,6 +188,66 @@ body {
 .carousel-caption h3 {
   font-size: 34px;
   font-weight: 700;
+}
+
+.contact .box {
+  border: 2px solid black;
+  border-top: none;
+  position: relative;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.contact .box h1 {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  margin: 0;
+  line-height: 0.05em;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.contact .box .heading:before, .contact .box .heading:after {
+  content: '';
+  flex-grow: 1;
+  margin: 0;
+  background: linear-gradient(to right, black, black);
+}
+
+.contact .box span {
+  padding: 0 50px;
+}
+
+.contact .box .box-text {
+  position: absolute;
+  padding: 80px 110px;
+  text-align: center;
+  line-height: 2em;
+}
+
+.contact-btn {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.contact-btn .btn-primary {
+  background-color: black;
+  width: 350px;
+  font-size: 16px;
+  height: 60px;
+}
+
+.contact-btn .btn-primary:hover, .contact-btn btn-primary:active {
+  background-color: gray;
+}
+
+footer {
+  height: 100px;
+}
+
+footer img {
+  padding: 0 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
