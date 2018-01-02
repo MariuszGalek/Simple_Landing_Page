@@ -43,21 +43,11 @@ body {
   padding-top: 150px;
 }
 
-/*-- about-us --*/
-.about-us, .activities, .contact {
-  margin: 100px auto;
-  height: auto;
-}
-
-.about-us .box {
-  border: 2px solid black;
-  border-top: none;
+.about-us .box, .services .box, .activities .box, .contact .box {
   position: relative;
-  height: 350px;
-  margin: 0 auto;
 }
 
-.about-us .box h1 {
+.about-us .box h1, .services .box h1, .activities .box h1, .contact .box h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,32 +57,53 @@ body {
   width: 100%;
   margin: 0;
   line-height: 0.05em;
-  font-size: 34px;
   font-weight: 700;
 }
 
-.about-us .box p {
-  font-weight: 300;
-}
-
-.about-us .box .heading:before, .about-us .box .heading:after {
+.about-us .box .heading:before, .about-us .box .heading:after, .services .box .heading:before, .services .box .heading:after, .activities .box .heading:before, .activities .box .heading:after, .contact .box .heading:before, .contact .box .heading:after {
   content: '';
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 0;
-  background: linear-gradient(to right, black, black);
 }
 
-.about-us .box span {
+.about-us .box span, .services .box span, .activities .box span, .contact .box span {
   padding: 0 50px;
 }
 
-.about-us .box .box-text {
-  position: absolute;
-  padding: 80px 110px;
+.about-us .box p, .services .box p, .activities .box p, .contact .box p {
+  font-weight: 300;
+}
+
+.about-us .box .box-text, .services .box .box-text, .activities .box .box-text, .contact .box .box-text {
   text-align: center;
   line-height: 2em;
+}
+
+/*-- about-us --*/
+.about-us, .activities, .contact {
+  margin: 100px auto;
+  height: auto;
+}
+
+.about-us .box {
+  border: 2px solid black;
+  border-top: none;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.about-us .box h1 {
+  font-size: 34px;
+}
+
+.about-us .box .heading:before, .about-us .box .heading:after {
+  background: linear-gradient(to right, black, black);
+}
+
+.about-us .box .box-text {
+  padding: 80px 110px;
 }
 
 /*-- services --*/
@@ -106,49 +117,26 @@ body {
 .services .box {
   border: 2px solid white;
   border-top: none;
-  position: relative;
   height: 250px;
   margin: 75px auto;
 }
 
 .services .box h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  margin: 0;
-  line-height: 0.05em;
   color: #fff;
   font-size: 34px;
-  font-weight: 700;
+}
+
+.services .box .heading:before, .services .box .heading:after {
+  background: linear-gradient(to right, white, white);
 }
 
 .services .box p {
   padding-top: 20px;
-  font-weight: 300;
-}
-
-.services .box .heading:before, .services .box .heading:after {
-  content: '';
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 0;
-  background: linear-gradient(to right, white, white);
-}
-
-.services .box span {
-  padding: 0 50px;
 }
 
 .services .box .box-text {
   position: absolute;
   padding: 40px 110px;
-  text-align: center;
-  line-height: 2em;
   color: #fff;
 }
 
@@ -156,42 +144,29 @@ body {
 .activities .box {
   border: 2px solid black;
   border-top: none;
-  position: relative;
   height: 1000px;
   margin: 0 auto;
 }
 
 .activities .box h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  margin: 0;
-  line-height: 0.05em;
   font-size: 34px;
-  font-weight: 700;
 }
 
 .activities .box .heading:before, .activities .box .heading:after {
-  content: '';
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 0;
   background: linear-gradient(to right, black, black);
 }
 
+.activities .box p {
+  font-size: 14px;
+}
+
 .activities .box span {
-  padding: 0 50px;
+  padding: 0 70px;
 }
 
 .activities .box .box-text {
   height: 300px;
   padding: 80px 110px;
-  text-align: center;
   line-height: 1.6em;
 }
 
@@ -199,11 +174,6 @@ body {
   font-size: 20px;
   font-weight: 700;
   padding: 15px 0;
-}
-
-.activities .box .box-text p {
-  font-weight: 300;
-  font-size: 14px;
 }
 
 /*-- gallery --*/
@@ -234,13 +204,13 @@ body {
   padding: 10px 20px;
 }
 
-.carousel-caption {
+.gallery .carousel-caption {
   left: 10%;
   right: auto;
   bottom: -10px;
 }
 
-.carousel-caption h3 {
+.gallery .carousel-caption h3 {
   font-size: 34px;
   font-weight: 700;
 }
@@ -249,66 +219,41 @@ body {
 .contact .box {
   border: 2px solid black;
   border-top: none;
-  position: relative;
   height: 300px;
   margin: 0 auto;
 }
 
 .contact .box h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  margin: 0;
-  line-height: 0.05em;
   font-size: 30px;
-  font-weight: 700;
-}
-
-.contact .box p {
-  font-weight: 300;
 }
 
 .contact .box .heading:before, .contact .box .heading:after {
-  content: '';
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 0;
   background: linear-gradient(to right, black, black);
-}
-
-.contact .box span {
-  padding: 0 50px;
 }
 
 .contact .box .box-text {
   position: absolute;
-  padding: 80px 110px;
-  text-align: center;
-  line-height: 2em;
+  padding: 80px 110px 20px 110px;
 }
 
-.contact-btn {
+.contact .box .contact-btn {
   text-align: center;
   margin-top: 180px;
 }
 
-.contact-btn .btn-primary {
+.contact .box .contact-btn button {
   background-color: #3c3c3c;
   width: 350px;
   font-size: 16px;
   height: 60px;
+  color: #fff;
 }
 
-.contact-btn .btn-primary:hover {
+.contact .box .contact-btn button:hover {
   background-color: #3c4438;
 }
 
-.contact-btn .btn-primary:active, .contact-btn .btn-primary:visited {
+.contact .box .contact-btn button:active, .contact .box .contact-btn button:visited {
   background-color: #fff;
   color: #3c3c3c;
 }
@@ -319,5 +264,53 @@ footer {
 
 footer img {
   padding: 0 30px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+  .jumbotron, .services {
+    background-position: center;
+  }
+  .jumbotron h1 {
+    font-size: 34px;
+    font-weight: 700;
+    padding: 10vh 20vw 20px 20vw;
+    text-align: center;
+  }
+  .jumbotron p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0 10vw;
+  }
+  .jumbotron .scroll {
+    display: none;
+  }
+  .about-us .box h1, .services .box h1, .activities .box h1, .contact .box h1 {
+    font-size: 28px;
+  }
+  .about-us .box p, .services .box p, .activities .box p, .contact .box p {
+    font-weight: 300;
+  }
+  .about-us .box span, .services .box span, .activities .box span, .contact .box span {
+    padding: 0 40px;
+  }
+  .about-us .box .box-text, .services .box .box-text, .activities .box .box-text, .contact .box .box-text {
+    padding: 10%;
+    line-height: 1.4em;
+  }
+  .gallery {
+    height: 1500px;
+  }
+  .gallery [class*="col"], .gallery .paddings {
+    padding: 0;
+  }
+  .contact .box .contact-btn button {
+    width: 200px;
+    font-size: 14px;
+    height: 50px;
+  }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
