@@ -299,6 +299,9 @@ footer img {
   .gallery [class*="col"], .gallery .paddings {
     padding: 0;
   }
+  .gallery img:hover {
+    transform: scale(1);
+  }
   .contact .box .contact-btn button {
     width: 200px;
     font-size: 14px;

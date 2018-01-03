@@ -149,7 +149,7 @@ body {
 
 /*-- gallery --*/
 
-.gallery {
+    .gallery {
 	height: 500px;
 	[class*="col"] {
 		height: 250px;
@@ -263,6 +263,9 @@ footer {
 		[class*="col"], .paddings {
 	 		padding: 0;
 		}
+		img:hover {
+			transform: scale(1);
+	}
 	}
 	.contact .box {
 		.contact-btn {
